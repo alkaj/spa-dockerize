@@ -1,0 +1,26 @@
+{
+  "name": "spa-dockerizer",
+  "version": "1.0.0",
+  "description": "Make a simple nginx based container serving a SPA application with render-tron powered prerendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp Dockerfile .dockerignore ../../"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alkaj/spa-dockerize.git"
+  },
+  "keywords": [
+    "docker",
+    "nginx",
+    "SPA",
+    "dockerize"
+  ],
+  "author": "Kamla Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alkaj/spa-dockerize/issues"
+  },
+  "homepage": "https://github.com/alkaj/spa-dockerize#readme"
+}
