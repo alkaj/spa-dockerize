@@ -16,7 +16,7 @@ If you don't feel like using npm, just download the zip tarball from this page, 
 ### 2. Build the image
 build the docker image  
   
-``` docker build -t my-spa-app-image . ```  
+``` docker build -t my-spa-app-image --build-arg BUILD_OUTPUT=/path/to/build/output . ```  
   
 ### 3. Run it locally  
 Run the image locally to test your site  
