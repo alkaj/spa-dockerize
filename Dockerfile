@@ -26,10 +26,11 @@ RUN sed -i '/index.html;/ a \
     /etc/nginx/conf.d/default.conf
 # Add expire headers gzip and make sure 404s end up on index.html
 RUN sed -i '/location \// a \
+            charset utf-8; \
             resolver 8.8.8.8; \
             # Send bot calls to rendertron \
             if ($http_user_agent ~* "(google|facebookexternalhit|twitter|whatsapp|telegram|baidu|duckduckgo|yahoo|yandex|ask|aol|bing|archive|wolfram)") { \
-                proxy_pass https://render-tron.appspot.com/render/$scheme://$host:$port$encoded_request_uri; \
+                proxy_pass https://render-tron.appspot.com/render/https://$http_host$encoded_request_uri; \
                 break; \
             } \
             # Send everything to index.html \
