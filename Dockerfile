@@ -29,7 +29,7 @@ RUN sed -i '/location \// a \
             charset utf-8; \
             resolver 8.8.8.8; \
             # Send bot calls to rendertron \
-            if ($http_user_agent ~* "(google|facebookexternalhit|twitter|whatsapp|telegram|baidu|duckduckgo|yahoo|yandex|ask|aol|bing|archive|wolfram)") { \
+            if ($http_user_agent ~* "(google|facebookexternalhit|twitter|whatsapp|telegram|baidu|duckduckgo|yahoo|yandex|ask|aol|bingbot|archive|wolfram|slurp|facebot|outbrain|pinterest|quora link preview|rogerbot|showyoubot|slackbot|vkshare|w3c_validator)") { \
                 proxy_pass https://render-tron.appspot.com/render/https://$http_host$encoded_request_uri; \
                 break; \
             } \
