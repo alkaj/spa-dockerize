@@ -32,3 +32,6 @@ Push it to any registry for deployment
   
 * The container exposes port ``` 80 ```  
 * You can change the prerenderer by editing the Dockerfile and providing another **Rendertron** instance url.
+
+# License
+The Spa-Dockerizer is an open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
