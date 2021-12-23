@@ -34,4 +34,4 @@ Push it to any registry for deployment
 * You can change the prerenderer by editing the Dockerfile and providing another **Rendertron** instance url.
 
 # License
-The Spa-Dockerizer is an open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Spa-Dockerizer is an open-source software licensed under the [MIT license](https://github.com/alkaj/spa-dockerize/blob/master/LICENSE).
